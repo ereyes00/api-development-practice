@@ -1,0 +1,1 @@
+web: node ./back/server.js & webpack --w
