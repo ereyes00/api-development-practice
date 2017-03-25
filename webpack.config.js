@@ -9,11 +9,11 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    rules: [ //used to be called loaders
+    rules: [
       {
         test: [/\.jsx?$/, /\.js?$/],
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader', //changed from 'babel'
+        loader: 'babel-loader',
         query: {
           presets: ['es2015', `react`]
         }
@@ -26,6 +26,6 @@ module.exports = {
   },
   devtool: 'source-maps',
   resolve: {
-    extensions: [".js", ".jsx"] //removed "" from beginning of array
+    extensions: [".js", ".jsx"]
   }
 };

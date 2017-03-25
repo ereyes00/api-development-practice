@@ -6,7 +6,7 @@ const App = React.createClass({
   render(){
     return(
       <article>
-
+        <h1>Hello World</h1>
       </article>
       )
   }
@@ -14,5 +14,5 @@ const App = React.createClass({
 
 ReactDOM.render(
   <App />,
-  document.getElementById('app')
+  document.getElementById("root")
 );
